@@ -65,4 +65,3 @@ actual packaging. Output: `build/appimage/ProtonCTL-x86_64.AppImage` - one file,
 
 The app icon is `frontend-compose/icon.png` (generated from `icon.svg` via
 `rsvg-convert`) - a placeholder "P" monogram, worth swapping for real branding.
->>>>>>> 609b04f (First commit!)
