@@ -1,0 +1,40 @@
+name: protonctl
+description: ProtonCTL - manage Proton-GE and custom Proton builds for Steam on Linux.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Material 3 dynamic color generation (HCT color space, Tonal Spot /
+  # Fidelity / Content / Expressive scheme variants). PROTONCTL drives
+  # `DynamicScheme` and `MaterialDynamicColors` directly to build its own
+  # SPEC_2021 (ColorScheme.fromSeed baseline) vs SPEC_2025 (full dynamic
+  # scheme control) toggle - see lib/theme/theme_controller.dart.
+  material_color_utilities: ^0.13.0
+
+  # State management for the theme controller and app-wide services.
+  provider: ^6.1.2
+
+  # Persists first-start / theme preferences on the Flutter side; the
+  # source of truth for install paths still lives in the native config
+  # written by ConfigManager, but the UI reads its own cached copy for
+  # instant startup.
+  shared_preferences: ^2.2.3
+
+  path_provider: ^2.1.4
+  ffi: ^2.1.3
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

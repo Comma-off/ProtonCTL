@@ -1,0 +1,45 @@
+# C++ / CMake
+build/
+CMakeFiles/
+CMakeCache.txt
+*.o
+*.so
+*.dylib
+*.dll
+
+# Flutter / Dart
+frontend/.dart_tool/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.packages
+frontend/build/
+frontend/linux/
+frontend/windows/
+frontend/macos/
+frontend/android/
+frontend/ios/
+frontend/web/
+frontend/pubspec.lock
+
+# Kotlin / Gradle (frontend-compose/)
+.gradle/
+frontend-compose/.gradle/
+frontend-compose/.kotlin/
+# Generated at build time by copyNativeLibraryForPackaging - not source.
+frontend-compose/resources/
+
+# Backup/restore output - produced by running the app (e.g. via `./gradlew
+# run` from frontend-compose/), not source. `.prtbak` was the old tar+zstd
+# extension; `.tar.gz` is the current format, but real .tar.gz release
+# assets aren't part of this repo either, so both are safe to ignore broadly.
+*.prtbak
+*.tar.gz
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Secrets
+.env

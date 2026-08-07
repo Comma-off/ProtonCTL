@@ -1,0 +1,3 @@
+add_executable(protonctl_smoke_tests smoke_tests.cpp)
+target_link_libraries(protonctl_smoke_tests PRIVATE protonctl_core)
+add_test(NAME smoke_tests COMMAND protonctl_smoke_tests)
